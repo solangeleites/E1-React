@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color:  #f7d2d2;
+    text-shadow: #706f6fa2 3px 3px 5px;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+.container-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7d2d2;
+    border-radius: 5px;
+}
+.container-tasks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+.container-task{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+}
+form > input, .btn-delete {
+    width: 180px;
+    height: 30px;
+    margin: 10px;
+    border: none;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container-task-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 39%;
+    background-color: gray;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-input{
+    outline: none;
+    width: 180px;
+    height: 38px;
+    padding: 10px;
+    border: 1px solid  #f5c6c6;
+    border-radius: 3px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-btn{
+    border: none;
+    outline: none;
+    height: 40px;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-delete{
+    font-size: 16px;
+    background-color: crimson;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete{
+    background-color: crimson;
 }
